@@ -20,4 +20,8 @@ export class AppComponent {
   navigateToLogin(){
     this.router.navigate(["/accounts"])
   }
+
+  navigateToRegister(){
+    this.router.navigate(["/accounts/register"])
+  }
 }
