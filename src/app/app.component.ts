@@ -16,4 +16,8 @@ export class AppComponent {
   ngOnInit(){
  
   }
+
+  navigateToLogin(){
+    this.router.navigate(["/accounts"])
+  }
 }

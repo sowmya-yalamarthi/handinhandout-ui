@@ -1,15 +1,14 @@
-<!-- nav -->
-<!-- <nav class="navbar navbar-expand navbar-dark bg-dark">
-  <div class="navbar-nav">
-      <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
-      <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Users</a>
-      <a class="nav-item nav-link" >Logout</a>
-  </div>
-</nav> -->
-
-<!-- main app container -->
 <div class="app-container">
   <h1 class="heading">Hand-In Hand-Out</h1>
-  
+  <div class="button-container">
+    <button class="btn btn-primary margin-right" (click)="navigateToLogin()">
+      Login
+    </button>
+    <button class="btn btn-success">
+      Register
+    </button>
+  </div>
+
+
   <router-outlet></router-outlet>
 </div>

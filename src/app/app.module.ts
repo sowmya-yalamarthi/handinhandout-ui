@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { AppserviceService } from './services/appservice.service';
 import { AccountsModule } from './modules/accounts/accounts.module';
 import { JwtInterceptor } from './helpers/_helpers/jwt.interceptors';
+import { ContentComponent } from './components/content/content.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
