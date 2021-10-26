@@ -7,6 +7,7 @@ import { AppserviceService } from './services/appservice.service';
 import { AccountsModule } from './modules/accounts/accounts.module';
 import { JwtInterceptor } from './helpers/_helpers/jwt.interceptors';
 import { ContentComponent } from './components/content/content.component';
+import { SharedModule } from './modules/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { ContentComponent } from './components/content/content.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule, AccountsModule
+    HttpClientModule, 
+    AccountsModule,
+    SharedModule
   ],
   providers: [AppserviceService,
     {
