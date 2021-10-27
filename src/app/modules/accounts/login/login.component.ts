@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
   loading = false;
   submitted = false;
   isLoginSucessFull: boolean = false;
+  errorMsg : boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -53,6 +54,7 @@ export class LoginComponent implements OnInit {
       if (data) {
         this.isLoginSucessFull = true;
       } else {
+        this.errorMsg = true;
         this.isLoginSucessFull = false;
       }
     },

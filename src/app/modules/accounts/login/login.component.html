@@ -1,5 +1,7 @@
-
-<div *ngIf="!isLoginSucessFull"class="login-page-container">
+<div *ngIf="errorMsg">
+    <app-alert></app-alert>
+</div>
+<div class="login-page-container">
 <div class="card">
     <h4 class="card-header">Login</h4>
     <div class="card-body">
