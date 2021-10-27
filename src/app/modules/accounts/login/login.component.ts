@@ -16,6 +16,7 @@ export class LoginComponent implements OnInit {
   submitted = false;
   isLoginSucessFull: boolean = false;
   errorMsg : boolean = false;
+  displayMessage : string;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -54,6 +55,7 @@ export class LoginComponent implements OnInit {
       if (data) {
         this.isLoginSucessFull = true;
       } else {
+        this.displayMessage = 'Username or password is incorrect'
         this.errorMsg = true;
         this.isLoginSucessFull = false;
       }

@@ -13,6 +13,9 @@ export class RegisterComponent implements OnInit {
   form: FormGroup;
   loading = false;
   submitted = false;
+  isRegiSuccesfull : boolean = false;
+  isEmailAlredayInUse : boolean = false;
+  displayMessage : string;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -50,8 +53,19 @@ export class RegisterComponent implements OnInit {
       password: value.password,
     }
     this.serviceService.registerUser(reqObj).subscribe((data: any) => {
-      console.log(data)
-    })
+      if(data.message = "User registered successfully@"){
+        console.log(data)
+      }
+    },
+      (err) => {
+        console.log(err)
+        let parseValue = JSON.parse(err.error);
+        if(parseValue.message="Email address already in use."){
+          this.isEmailAlredayInUse = true;
+          this.displayMessage = "Email address already Registered please use different email"
+        } 
+      }
+    )
   }
 
 }
