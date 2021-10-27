@@ -1,3 +1,6 @@
+<div *ngIf="isEmailAlredayInUse">
+    <app-alert [message]="displayMessage"></app-alert>
+</div>
 <div class="register-page-container">
     <div class="card">
         <h4 class="card-header">Register</h4>
