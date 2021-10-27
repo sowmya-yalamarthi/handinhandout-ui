@@ -16,6 +16,7 @@ export class RegisterComponent implements OnInit {
   isRegiSuccesfull : boolean = false;
   isEmailAlredayInUse : boolean = false;
   displayMessage : string;
+  errorAlert : boolean;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -53,7 +54,11 @@ export class RegisterComponent implements OnInit {
       password: value.password,
     }
     this.serviceService.registerUser(reqObj).subscribe((data: any) => {
+      let parseValue = JSON.parse(data);
       if(data.message = "User registered successfully@"){
+        this.errorAlert = false;
+        this.isEmailAlredayInUse = true;
+        this.displayMessage = "User registered successfully";
         console.log(data)
       }
     },
@@ -61,6 +66,7 @@ export class RegisterComponent implements OnInit {
         console.log(err)
         let parseValue = JSON.parse(err.error);
         if(parseValue.message="Email address already in use."){
+          this.errorAlert = true;
           this.isEmailAlredayInUse = true;
           this.displayMessage = "Email address already Registered please use different email"
         } 
