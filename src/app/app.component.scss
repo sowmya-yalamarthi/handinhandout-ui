@@ -1,9 +1,6 @@
 .app-container {
   width: 100vw;
   height: 100vh;
-  background: url("../assets/imagefinal.jpg") repeat-x;
-  background-size: 100%;
-  background-position-y: bottom;
 
   .heading {
     right: 50%;
@@ -11,10 +8,13 @@
   }
 
   .button-container {
+    cursor: pointer;
     float: right;
     margin: 10px;
-    .margin-right{
-        margin-right: 20px;
+    display: flex;
+
+    .margin-right {
+      margin-right: 20px;
     }
   }
 

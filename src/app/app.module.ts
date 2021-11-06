@@ -9,6 +9,7 @@ import { JwtInterceptor } from './helpers/_helpers/jwt.interceptors';
 import { ContentComponent } from './components/content/content.component';
 import { SharedModule } from './modules/shared/shared.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,7 @@ import { SharedModule } from './modules/shared/shared.module';
     AppRoutingModule,
     HttpClientModule, 
     AccountsModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [AppserviceService,
     {
