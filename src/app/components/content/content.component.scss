@@ -1,4 +1,11 @@
 .landing-page-container {
-  margin-top: 2%;
   text-align: center;
+  //margin-top: 2%;
+  font-family: 'Times New Roman', Times, serif;
+  height: calc(100vh - 76px);
+  width: 100%;
+  background: url('../../../assets/jpg/165799.jpg') repeat-x;
+  background-size: cover;
+  color: white;
+
 }
