@@ -1,10 +1,12 @@
 .login-page-container {
-    
   margin: 0 auto;
-  width: 500px;
+  padding-top: 5%;
+  width: 45%;
 }
 
-.para {
-  padding: 0px 20px;
-  color:#fff;
+@media only screen and (max-width: 768px) {
+  .login-page-container {
+    width: 95%;
+    margin-top: 20%;
+  }
 }
