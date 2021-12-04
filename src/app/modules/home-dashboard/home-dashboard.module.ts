@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { HomeDashboardRoutingModule } from './home-dashboard-routing.module';
 import { HomedashboardComponent } from './homedashboard/homedashboard.component';
 
@@ -9,7 +8,7 @@ import { HomedashboardComponent } from './homedashboard/homedashboard.component'
   declarations: [HomedashboardComponent],
   imports: [
     CommonModule,
-    HomeDashboardRoutingModule
+    HomeDashboardRoutingModule,
   ]
 })
 export class HomeDashboardModule { }
