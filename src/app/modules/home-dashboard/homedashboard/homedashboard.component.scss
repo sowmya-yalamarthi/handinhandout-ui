@@ -1,9 +1,23 @@
-.home-dashboard-container{
-    display: flex;
-    justify-content: space-around;
+.home-dashboard-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+
+  .books-handout-section {
     border: 1px solid #63b6f2;
-    margin: 10% auto;
     height: 200px;
     width: 200px;
     padding-top: 10px;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .books-sell-section {
+    border: 1px solid #63b6f2;
+    height: 200px;
+    width: 200px;
+    padding-top: 10px;
+    text-align: center;
+    margin-right: 20px;
+  }
 }
