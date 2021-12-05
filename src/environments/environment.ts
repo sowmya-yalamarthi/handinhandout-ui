@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false, 
-  baseUrl: "https://handinhandoutapi.herokuapp.com/"
+  baseUrl: "http://localhost:8080/"
 };
 
 /*
