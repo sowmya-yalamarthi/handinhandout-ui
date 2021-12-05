@@ -20,4 +20,8 @@ export class HomedashboardComponent implements OnInit {
   onClickOfBooksRent() {
     this.router.navigate(["/books-rent"])
   }
+
+  onClickOfBooksSell() {
+    this.router.navigate(["/books-sell"])
+  }
 }
