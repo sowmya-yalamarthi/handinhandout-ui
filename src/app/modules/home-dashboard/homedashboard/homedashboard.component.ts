@@ -17,4 +17,7 @@ export class HomedashboardComponent implements OnInit {
     this.router.navigate(["/books-handout"])
   }
 
+  onClickOfBooksRent() {
+    this.router.navigate(["/books-rent"])
+  }
 }
