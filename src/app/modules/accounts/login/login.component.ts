@@ -15,9 +15,9 @@ export class LoginComponent implements OnInit {
   loading = false;
   submitted = false;
   isLoginSucessFull: boolean = false;
-  errorMsg : boolean = false;
-  displayMessage : string;
-  errorAlert : boolean;
+  errorMsg: boolean = false;
+  displayMessage: string;
+  errorAlert: boolean;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -55,6 +55,7 @@ export class LoginComponent implements OnInit {
     this.serviceService.getUser(reqObj).subscribe(data => {
       if (data) {
         this.isLoginSucessFull = true;
+        this.router.navigate(["/home-dashboard"])
       } else {
         this.errorAlert = true;
         this.displayMessage = 'Username or password is incorrect'

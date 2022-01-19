@@ -1,14 +1,11 @@
 <div class="app-container">
-  <h1 class="heading">Hand-In Hand-Out</h1>
-  <div class="button-container">
-    <button class="btn btn-primary margin-right" (click)="navigateToLogin()">
-      Login
-    </button>
-    <button class="btn btn-success" (click)="navigateToRegister()">
-      Register
-    </button>
-  </div>
-
-
+  <nav class="navbar" style="background-color: #e3f2fd;">
+    <h1 class="heading"><i class="bi bi-bootstrap-fill"></i>
+      Hand-In Hand-Out</h1>
+    <div class="button-container">
+      <a class="nav-link active" aria-current="page" (click)="navigateToLogin()">Login</a>
+      <a class="nav-link active" aria-current="page" (click)="navigateToRegister()">Register</a>
+    </div>
+  </nav>
   <router-outlet></router-outlet>
 </div>
