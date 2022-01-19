@@ -18,7 +18,9 @@
 - The Front-end responsive design would be **Bootstrap**
 
 [Link to Wiki](https://github.com/sowmya-yalamarthi/handinhandout-ui/wiki)
+
 [Link to the issues](https://github.com/sowmya-yalamarthi/handinhandout-ui/issues)
+
 [Link to the milestones](https://github.com/sowmya-yalamarthi/handinhandout-ui/milestones)
 
 [Hosted URL](https://handinhandoutui.herokuapp.com/)
