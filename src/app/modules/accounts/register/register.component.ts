@@ -55,10 +55,10 @@ export class RegisterComponent implements OnInit {
     }
     this.serviceService.registerUser(reqObj).subscribe((data: any) => {
       let parseValue = JSON.parse(data);
-      if(parseValue.message = "User registered successfully@"){
-        this.errorAlert = false; 
+      if(data.message = "User registered successfully@"){
+        this.errorAlert = false;
         this.isEmailAlredayInUse = true;
-        this.displayMessage = "User registered successfully"
+        this.displayMessage = "User registered successfully";
         console.log(data)
       }
     },
